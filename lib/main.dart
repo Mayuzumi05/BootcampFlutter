@@ -52,3 +52,7 @@ class _CounterPageState extends State<CounterPage> {
     );
   }
 }
+
+// Kegunaan setState pada kode diatas untuk memperbarui nilai counter pada widget CounterPage agar terjadi perubahan UI
+// setState() sendiri biasanya digunakan untuk memberi tahu framework bahwa ada perubahan dalam UI. Ketika setState() dipanggil, Flutter akan melakukan rebuild widget tertentu agar perubahan pada data atau variabel terlihat pada layar.
+// jika setState() tidak dipanggil, nilai pada variabel counter akan tetap berubah tetapi pada layar tidak akan terlihat perubahannya. Sehingga memerlukan useState() agar perubahan nilai pada variabel juga dapat terlihat di layar.
