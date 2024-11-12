@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sanberappflutter/pages/main_page.dart';
 
 class GetStartedPage extends StatefulWidget {
   const GetStartedPage({super.key});
@@ -18,7 +19,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
             Container(
               margin: const EdgeInsets.only(left: 32, right: 32, top: 80),
               width: double.infinity,
-              height: 320,
+              height: 240,
               decoration: const BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage('assets/images/news.png')
@@ -55,7 +56,12 @@ class _GetStartedPageState extends State<GetStartedPage> {
               child: SizedBox(
                 width: double.infinity,
                 child: ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.pushReplacement(
+                      context,
+                      MaterialPageRoute(builder: (context) => MainPage())
+                    );
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF3498DB),
                     padding: const EdgeInsets.symmetric(vertical: 24),
@@ -105,7 +111,7 @@ class _GetStartedPageState extends State<GetStartedPage> {
               ),
             ),
             const SizedBox(
-              height: 80,
+              height: 64,
             ),
           ],
       )),
