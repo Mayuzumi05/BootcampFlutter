@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sanberappflutter/pages/get-started-pages.dart';
+import 'package:sanberappflutter/pages/get_started_pages.dart';
+import 'package:sanberappflutter/pages/home.dart';
+import 'package:sanberappflutter/pages/quiz.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,7 +12,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(home: GetStartedPage());
+    return const MaterialApp(home: HomePage());
   }
 }
 
