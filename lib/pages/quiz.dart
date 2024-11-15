@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sanberappflutter/pages/get_started_pages.dart';
-import 'package:sanberappflutter/pages/widget/main_settings.dart';
+import 'package:sanberappflutter/core/custom/widget/main_settings.dart';
 
 class QuizPage extends StatefulWidget {
   const QuizPage({super.key});

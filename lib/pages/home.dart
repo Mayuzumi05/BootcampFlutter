@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sanberappflutter/core/custom/box/custom_box_image_assets.dart';
-import 'package:sanberappflutter/pages/widget/latest_news.dart';
+import 'package:sanberappflutter/core/custom/widget/latest_news.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
